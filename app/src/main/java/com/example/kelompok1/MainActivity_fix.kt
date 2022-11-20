@@ -1,5 +1,7 @@
 package com.example.kelompok1
 
+import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,7 +28,14 @@ class MainActivity_fix : AppCompatActivity() {
         list.addAll(listMovie)
         showRecyclerList()
 
+//        val context: Context=this@MainActivity_fix
+//        val intent= Intent(context,DetailActivity::class.java)
+//        val dataMovie = Movie(data.judul, data.details,data.photos)
+//        intent.putExtra("information",dataMovie)
+//        context.startActivity(intent)
+
     }
+
 
     //TODO 02
     val listMovie: ArrayList<Movie>
@@ -53,14 +62,37 @@ class MainActivity_fix : AppCompatActivity() {
         }
         val listMovieAdapter = DataAdapter(list)
         rvMovie.adapter = listMovieAdapter
+        listMovieAdapter.setOnItemClickCallback(object : DataAdapter.OnItemClickCallback{
+            override fun onItemClicked(data: Movie) {
+                showSelectedHero(data)
+            }
+        })
     }
 
-
+//fun show(data:Movie){
+//    val context: Context=this@MainActivity_fix
+//        val intent= Intent(context,DetailActivity::class.java)
+//        val dataMovie = Movie(data.judul, data.details,data.photos)
+//        intent.putExtra("information",dataMovie)
+//        context.startActivity(intent)
+//}
+    private fun showSelectedHero(data: Movie){
+        val context: Context=this@MainActivity_fix
+        val intent= Intent(context,DetailActivity::class.java)
+        val dataMovie = Movie(data.judul, data.details,data.photos)
+        intent.putExtra("information",dataMovie)
+        startActivity(intent)
+    }
 
         //TODO 7C
 
 
             //TODO 8
+//    val context: Context=this@MainActivity_fix
+//    val intent= Intent(context,DetailActivity::class.java)
+
+
+
 
     //}
 
