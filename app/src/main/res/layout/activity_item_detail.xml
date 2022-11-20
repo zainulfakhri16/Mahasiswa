@@ -66,7 +66,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Title"
+                android:text="Nama"
                 android:textStyle="bold" />
 
             <TextView
@@ -77,45 +77,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cast"
+                android:text="NIM"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/detailsnya"
+                android:id="@+id/overview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <Button
-                android:id="@+id/buttonTrailer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Book now" />
+<!--            <Button-->
+<!--                android:id="@+id/buttonTrailer"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Book now" />-->
         </LinearLayout>
 
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/linear1"
-        android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Overview"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/overview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Overview" />
-    </LinearLayout>
 
 
 </RelativeLayout>

@@ -13,13 +13,13 @@ class DetailActivity : AppCompatActivity(),View.OnClickListener{
     //TODO 10
 
     override fun onClick(v: View?) {
-        when(v!!.id){
-            R.id.buttonTrailer->startActivity(
-                Intent(
-                    this@DetailActivity,VideoActivity::class.java
-                )
-            )
-        }
+//        when(v!!.id){
+//            R.id.buttonTrailer->startActivity(
+//                Intent(
+//                    this@DetailActivity,VideoActivity::class.java
+//                )
+//            )
+//        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
