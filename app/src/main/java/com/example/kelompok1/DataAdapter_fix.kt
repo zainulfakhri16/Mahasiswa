@@ -41,7 +41,7 @@ class DataAdapter(private val listMovie:ArrayList<Movie>) : RecyclerView.Adapter
         holder.tvDescriptor.text = model.details
 
         holder.itemView.setOnClickListener{
-            Toast.makeText(holder.itemView.context, "Judul "+ model.judul, Toast.LENGTH_SHORT).show()
+            Toast.makeText(holder.itemView.context, "Film "+ model.judul, Toast.LENGTH_SHORT).show()
             onItemClickCallback.onItemClicked(listMovie[holder.adapterPosition])
         }
 
