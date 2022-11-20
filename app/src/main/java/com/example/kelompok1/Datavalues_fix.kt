@@ -44,21 +44,13 @@ class Datavalues{
         )
 
         val gambarfilm = arrayOf<Int>(
-            R.drawable.poster_a_star,
-            R.drawable.poster_aquaman,
-            R.drawable.poster_avengerinfinity,
-            R.drawable.poster_birdbox,
-            R.drawable.poster_bohemian,
-            R.drawable.poster_bumblebee,
-            R.drawable.poster_creed,
-            R.drawable.poster_deadpool,
-            R.drawable.poster_dragon,
-            R.drawable.poster_dragonball,
-            R.drawable.poster_glass,
-            R.drawable.poster_hunterkiller,
-            R.drawable.poster_mortalengine,
-            R.drawable.poster_robinhood,
-            R.drawable.poster_spiderman
+            R.drawable.itachi,
+            R.drawable.kyubi,
+            R.drawable.minato,
+            R.drawable.nagato,
+            R.drawable.naruto,
+            R.drawable.sakura,
+            R.drawable.sasuke
         )
 
     }
